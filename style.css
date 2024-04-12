@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(img/background.png);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 250px 550px 10px 565px;
+}
+
+div:has(button) {
+    margin: 0 auto;
+}
+
+button {
+    font-size: 1.2rem;
+    width: 150px;
+    margin: auto 15px auto auto;
+    padding: .5rem 2rem;
+}
+
+.board {
+    height: 450px;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 2px;
+}
+
+.cell {
+    font-size: 7rem;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 50px auto 50px;
+}
