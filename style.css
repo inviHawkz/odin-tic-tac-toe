@@ -3,6 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+
+.btn-restart {
+    padding: .5rem 3rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.btn-restart:hover {
+    background-color: #cecccc;
 }
 
 body {
@@ -23,18 +36,12 @@ div:has(button) {
     margin: 0 auto;
 }
 
-button {
-    font-size: 1.2rem;
-    width: 150px;
-    margin: auto 15px auto auto;
-    padding: .5rem 2rem;
+.turn {
+    margin: auto;
+    font-size: 2rem;
 }
 
 .board {
-    height: 450px;
-    width: 450px;
-    margin: 0 auto;
-    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(3, 150px);
